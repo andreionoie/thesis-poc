@@ -1,3 +1,4 @@
+# authority account: 0x044f21d518b6f861859201caa9e3d2ebaa8d9a02 (password=thesis-poc)
 [parity]
 chain = "chainspec.json"
 base_path = "."
@@ -10,3 +11,8 @@ apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "par
 port = 8451
 [ipc]
 disable = true
+[account]
+password = ["node.pwds"]
+[mining]
+engine_signer = "0x044f21d518b6f861859201caa9e3d2ebaa8d9a02"
+reseal_on_txs = "none"

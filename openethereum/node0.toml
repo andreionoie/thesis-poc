@@ -1,8 +1,10 @@
-# authority account: 0x5d07b0b23d6ba996c5e0a746dc2cd14019c47364 (password=thesis-poc)
-# user account: 0x8f938b24413ff7582be9ffe5ab3fdc65a82b85a4 (password=user)
+# authority account: 0xf70193972ed189063e14cf18eeaf81dd23cab118 (password=thesis-poc)
+# user account: 0x8f15e25fa5e2502a88000aa1dfb87e46150eae5f (password=user)
 [parity]
 chain = "chainspec.json"
-base_path = "."
+base_path = "./node0"
+[misc]
+log_file = "./node0/node0.log"
 [network]
 port = 30300
 [rpc]
@@ -11,7 +13,8 @@ apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "par
 [websockets]
 port = 8450
 [account]
+unlock = ["0x8f15e25fa5e2502a88000aa1dfb87e46150eae5f"]
 password = ["node.pwds"]
 [mining]
-engine_signer = "0x5d07b0b23d6ba996c5e0a746dc2cd14019c47364"
+engine_signer = "0xf70193972ed189063e14cf18eeaf81dd23cab118"
 reseal_on_txs = "none"

@@ -9,6 +9,11 @@ module.exports = {
       host: "127.0.0.1",
       port: 8545,
       network_id: "*"
+    },
+    openeth: {
+      host: "127.0.0.1",
+      port: 8540,
+      network_id: "*"
     }
   }
 };

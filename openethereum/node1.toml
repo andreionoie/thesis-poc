@@ -12,8 +12,12 @@ bootnodes = [
 [rpc]
 port = 8541
 apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "parity_accounts"]
+cors = ["all"]
 [websockets]
 port = 8451
+apis = ["web3", "net", "eth", "pubsub", "personal", "signer", "parity", "parity_pubsub", "parity_accounts", "parity_set", "traces"]
+origins = ["all"]
+hosts = ["all"]
 [ipc]
 disable = true
 [account]
